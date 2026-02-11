@@ -1,0 +1,30 @@
+#Abstract classess are the classess that never expect to be instantiated
+
+class Animal():                            #Base class
+    def __init__(self,name):
+      self.name=name
+      
+    def speak(self):
+       raise NotImplementedError("subclass must implement this abstract method")  
+
+# my_animal = Animal('adi')  
+# my_animal.speak()               #o/p:-NotImplementedError: subclass must implement this abstract method
+
+
+
+class Dog(Animal):
+   def speak(self):
+      return self.name + "says WOOF!!"
+   
+
+class Cat(Animal):
+   def speak(self):
+      return self.name + "says MEOW!!"   
+   
+
+
+adi = Dog('adi')
+joshi = Cat('joshi')  
+
+print(adi.speak())          #o/p:- adisays WOOF!!
+print(joshi.speak())        #o/p:-joshisays MEOW!!
