@@ -1,0 +1,44 @@
+#once an element is inside the tupple, it can not be reassigned, tupples are immutable
+#tupples are immutable ordred collection of elements
+# t.count('a')    ---> occurance of a in tupple t
+# t.index('b')    ---> index of first occurance of 'b' in tupple t
+#len(t)             t[-1]
+
+
+
+# t = (1, 'kannu', '0.55')
+# print(len(t))
+# print(t[1]) #o/p:- kannu
+# print(t[-1]) #o/p:- 0.55
+
+
+#                            # count() fn in tupple-
+# t = ('a','a','a','b','b','c')
+# print(t.count('a'))  #o/p:- 3
+
+
+#                            # index() fn returns the first appearance of the letter
+# print(t.index('b'))  #o/p:- 3
+
+
+
+# u=[10,20,30]
+# u[0]=100
+# print(u) #[100, 20, 30]
+
+# t=(10,20,30)
+# t[0]=100
+# print(t) #error- 'tuple' object does not support item assignment
+
+
+# since tupples are immutable, so we can not append elements in tupples, however we can do this-
+# s=(2,5,8)
+# s_append = s + (8, 16, 67)
+# print(s_append)             #o/p:- (2, 5, 8, 8, 16, 67)
+# print(s)                    #o/p:-  (2, 5, 8)
+
+
+#reassignment is also possible in tupples
+# s=(2,5,8)
+# s = s + (8, 16, 67)
+# print(s)             #o/p:- (2, 5, 8, 8, 16, 67)  ----> but this is a new 's'      
