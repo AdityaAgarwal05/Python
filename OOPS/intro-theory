@@ -1,0 +1,28 @@
+oops allows programmers to create their own objects that have methods and attributes
+
+as we were using .method_name() syntax for lists and strings
+
+for much larger scripts of python functions themselves are not suffiecient for organisation and repeatability
+commonly repeated tasks and objects can be defined with to create code that is more usable
+
+objects here means classes
+
+fn inside class are called methods
+
+
+
+
+
+__init__  is a method in class/object which is like a constructor which allows to craete an instance of the object
+
+note:- everything in python is an object
+we can use class to create user defined objects
+
+
+class is like a blueprint which defines the nature of future object
+
+instance is an specific object created from a particular class
+
+
+class Sample():
+pass
