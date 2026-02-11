@@ -1,0 +1,24 @@
+Generator fns allows us to write a fn that can send back a value and then later resume to pick up where it left off.
+
+
+Generators allows to generate a sequence of values over time instead of having to create the entire seuence as a whole and holding the memory.
+
+
+the main difference in the sequence is the use of yield keyword.
+
+
+when a generator fn is compilled that becomes an object that supports an itertion protocol.
+
+
+that means when they are callled in your code they don't return a value and then exit.
+
+
+generator fns will automatically suspend and resume their execution and state around the last point of value generation.
+
+
+the advantage is that instead of having to compute an entire series of values up front, the generator generates one value waits untill the next value is called for
+
+let say you want to have the values from 1 to million, so instead of producing the giant list fom 1 to million in the memory, you can use generator, this is how range() also works
+
+if user needs the list they have to transform the generator into the list, like this-
+  list(range(1,100))
