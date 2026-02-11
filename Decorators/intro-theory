@@ -1,0 +1,23 @@
+Decorators allows to decorate a fn, 
+
+let say you have created a fn, now you want to add some more functionality to this fn,
+
+one way is- write/append that functionality in the old fn code, but the problem with this method is that we can't call our original old fn
+
+another way is - craete a new fn that contains the old code and now add your new functionality in this new fn, the problem here is that we are not following DRY strategy
+
+and later on if you want to delete that functionality you have to delete that code
+
+
+here comes the decorators, it allows aus to add the extra functionality to our code, and we can add or delete this extra functionality from our code like switching on and switching off
+
+decorators use @ operator and then are adeded at the top of the fn
+
+
+@some_decorator
+def simple_func():
+      #Do simple stuff
+      return something
+
+
+      now if you want to remove the extra functionality then just delete that extra line that is above the fn
