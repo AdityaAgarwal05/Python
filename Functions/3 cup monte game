@@ -1,0 +1,35 @@
+# 3 Cup Monte game-
+
+
+from random import shuffle
+def shuffle_list(mylist):      #since 'shuffle(mylist)' does not return the list, so we had to make the fn
+    shuffle(mylist)
+    return mylist
+
+def playerGuess():
+    guess=''
+    while guess not in ['0','1','2']:
+        guess = input('pick a number from 0, 1, 2')
+    return int(guess)
+
+
+def check_guess(mylist, guess):
+    if mylist[guess]=='O':
+        print('correct')
+    else:
+        print('wrong guess')   
+        print(mylist) 
+
+
+#Initial list-
+mylist=['','O','']
+
+#Mixed up list-
+mixed_up = shuffle_list(mylist)
+
+#user guess
+guess = playerGuess()
+
+
+#check the guess-
+check_guess(mixed_up, guess)
